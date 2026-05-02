@@ -1,0 +1,44 @@
+/* Font family */
+$font-family-primary: 'OpenSansRegular', sans-serif;
+$font-family-display: 'OpenSansBold', sans-serif;
+$font-family-secondary: 'OpenSansRegular', sans-serif;
+
+/* Font sizes */
+$font-size-xs: clamp(0.75rem, 0.72rem + 0.12vw, 0.8125rem);
+$font-size-sm: clamp(0.875rem, 0.84rem + 0.14vw, 0.95rem);
+$font-size-md: clamp(1rem, 0.96rem + 0.18vw, 1.125rem);
+$font-size-lg: clamp(1.125rem, 1.06rem + 0.28vw, 1.3125rem);
+$font-size-xl: clamp(1.25rem, 1.12rem + 0.45vw, 1.625rem);
+$font-size-2xl: clamp(1.5rem, 1.28rem + 0.75vw, 2rem);
+$font-size-3xl: clamp(2rem, 1.62rem + 1.2vw, 2.75rem);
+$font-size-4xl: clamp(2.5rem, 2rem + 1.7vw, 3.75rem);
+$font-size-5xl: clamp(3rem, 2.35rem + 2.2vw, 4.5rem);
+
+/* Font weights */
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+/* Line heights */
+$line-height-tight: 1.2;
+$line-height-normal: 1.5;
+$line-height-relaxed: 1.7;
+
+/* Letter spacing */
+$letter-spacing-tight: -0.02em;
+$letter-spacing-normal: 0;
+$letter-spacing-wide: 0.05em;
+
+/* Headings */
+$heading-h1-size: $font-size-5xl;
+$heading-h2-size: $font-size-4xl;
+$heading-h3-size: $font-size-3xl;
+
+/* Body */
+$text-body-size: $font-size-md;
+$text-small-size: $font-size-sm;
+
+/* UI */
+$text-button-size: $font-size-sm;
+$text-label-size: $font-size-xs;

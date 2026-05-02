@@ -1,0 +1,72 @@
+{
+  "name": "brewly-store",
+  "type": "module",
+  "version": "0.0.3",
+  "private": true,
+  "packageManager": "pnpm@10.26.2",
+  "scripts": {
+    "build": "nuxt build",
+    "b": "nuxt build",
+    "dev": "nuxt dev",
+    "d": "nuxt dev",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "f": "prettier --write .",
+    "generate": "nuxt generate",
+    "g": "nuxt generate",
+    "preview": "nuxt preview",
+    "p": "nuxt preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "nuxt typecheck",
+    "tc": "nuxt typecheck",
+    "postinstall": "nuxt prepare",
+    "prepare": "husky install",
+    "commit": "cz",
+    "sync:dev": "git checkout feature/BRS_dev && git pull origin feature/BRS_dev && git merge origin/main && git push origin feature/BRS_dev",
+    "sync:mykola": "git checkout feature/BRS_mykola && git pull origin feature/BRS_mykola && git rebase feature/BRS_dev && git push --force-with-lease",
+    "sync:serhii": "git checkout feature/BRS_serhii && git pull origin feature/BRS_serhii && git rebase feature/BRS_dev && git push --force-with-lease",
+    "push:dev": "git push origin feature/BRS_dev",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:major": "standard-version --release-as major"
+  },
+  "lint-staged": {
+    "*.{js,vue,ts,scss,css,md}": "prettier --write"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-git"
+    }
+  },
+  "dependencies": {
+    "nuxt": "^4.3.1",
+    "vue": "^3.5.29",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.4.3",
+    "@commitlint/config-conventional": "^20.4.3",
+    "@nuxt/fonts": "latest",
+    "@nuxt/icon": "latest",
+    "@nuxtjs/i18n": "latest",
+    "@nuxtjs/sitemap": "latest",
+    "@nuxtjs/tailwindcss": "latest",
+    "@pinia/nuxt": "latest",
+    "autoprefixer": "latest",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-git": "^1.12.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^16.3.2",
+    "postcss": "latest",
+    "prettier": "^3.8.1",
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "sass": "latest",
+    "standard-version": "^9.5.0",
+    "tailwindcss": "^3.4.17",
+    "vitest": "^3.2.4",
+    "vue-tsc": "^3.0.8"
+  }
+}

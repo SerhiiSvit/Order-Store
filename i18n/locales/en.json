@@ -1,0 +1,113 @@
+{
+  "headerNav": {
+    "home": "Home",
+    "shop": "Shop",
+    "how": "How it works",
+    "faq": "FAQ",
+    "account": "Account",
+    "cart": "Cart",
+    "auth": "Sign in",
+    "about": "About"
+  },
+  "footerNav": {
+    "home": "Home",
+    "shop": {
+      "catalog": "Shop",
+      "featured": "Featured coffees",
+      "subscription": "Subscription"
+    },
+    "help": {
+      "delivery": "Shipping info",
+      "returns": "Returns",
+      "contact": "Contact",
+      "faq": "FAQ"
+    },
+    "account": {
+      "auth": "Sign in",
+      "profile": "My account",
+      "subscription": "My subscription",
+      "order": "Orders"
+    },
+    "social": { "instagram": "Instagram", "linkedin": "LinkedIn", "facebook": "Facebook" },
+    "legal": {
+      "privacy": "Privacy Policy",
+      "subscription": "Subscription Terms",
+      "cookies": "Cookies Policy",
+      "terms": "Terms of Service"
+    }
+  },
+  "home": {
+    "title": "Brewly Store foundation is ready",
+    "subtitle": "Core stack, architecture conventions, and workflow are aligned for team delivery.",
+    "status": "Dark theme baseline enabled",
+    "progress": {
+      "title": "What has been done",
+      "one": "Nuxt 4 project scaffolded with core modules connected.",
+      "two": "Component, page, and style structure aligned with team conventions.",
+      "three": "Dark-first UI baseline and mandatory BEM approach implemented.",
+      "four": "Initial Vitest testing baseline with core validation checks added."
+    },
+    "faqTitle": "Quick FAQ",
+    "socialsTitle": "Social channels",
+    "socials": {
+      "x": "X / Twitter",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    },
+    "faq": {
+      "one": {
+        "q": "How is the component structure organized?",
+        "a": "Feature components are grouped by domain folders (for example home/HomeHero.vue) while reusable primitives stay in ui/."
+      },
+      "two": {
+        "q": "How are styles organized?",
+        "a": "SCSS mirrors the same layered structure using index.scss files for predictable imports and scaling."
+      }
+    }
+  },
+  "about": {
+    "title": "About this project",
+    "description": "Nuxt 4 baseline with layered architecture, dark-first styling, and modular conventions.",
+    "mission": "We are building a scalable storefront with predictable structure, clear workflow, and reusable UI blocks for team velocity.",
+    "principlesTitle": "Core principles",
+    "principles": {
+      "one": {
+        "title": "Layered architecture",
+        "text": "Pages orchestrate, composables encapsulate logic, and UI components stay as clean as possible."
+      },
+      "two": {
+        "title": "Unified team flow",
+        "text": "One consistent rule set for folders, naming, and delivery process across every task."
+      },
+      "three": {
+        "title": "Production focus",
+        "text": "Every change is validated and finished with a clear manual commit message in the agreed format."
+      }
+    },
+    "stackTitle": "Current stack",
+    "stack": {
+      "one": "Nuxt 4 + Vue 3 (Composition API)",
+      "two": "Pinia for shared state",
+      "three": "TailwindCSS + SCSS (dark-first tokens)",
+      "four": "Nuxt i18n, Sitemap, Icon, Fonts"
+    },
+    "workflowTitle": "Team workflow",
+    "workflowText": "We work through: Backlog -> Issue -> In Progress -> Implementation -> Done -> Dev Log -> Commit."
+  },
+  "cart": {
+    "title": "Cart",
+    "description": "Cart with coffees"
+  },
+  "auth": {
+    "sigIn": { "title": "Sign in", "description": "Login to the user account" },
+    "register": { "title": "Registration", "description": "Registration of a new user" }
+  },
+  "account": {
+    "title": "Account",
+    "description": "User account"
+  },
+  "catalog": {
+    "title": "Catalog",
+    "description": "Product grid"
+  }
+}

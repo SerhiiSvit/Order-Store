@@ -1,0 +1,55 @@
+@use "../tokens/breakpoints" as breakpoints;
+
+@mixin up-sm {
+  @media (min-width: breakpoints.$breakpoint-sm) {
+    @content;
+  }
+}
+
+@mixin up-md {
+  @media (min-width: breakpoints.$breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin up-lg {
+  @media (min-width: breakpoints.$breakpoint-lg) {
+    @content;
+  }
+}
+
+@mixin up-xl {
+  @media (min-width: breakpoints.$breakpoint-xl) {
+    @content;
+  }
+}
+
+@mixin down-sm {
+  @media (max-width: calc(#{breakpoints.$breakpoint-sm} - 0.02rem)) {
+    @content;
+  }
+}
+
+@mixin down-md {
+  @media (max-width: calc(#{breakpoints.$breakpoint-md} - 0.02rem)) {
+    @content;
+  }
+}
+
+@mixin down-lg {
+  @media (max-width: calc(#{breakpoints.$breakpoint-lg} - 0.02rem)) {
+    @content;
+  }
+}
+
+@mixin down-xl {
+  @media (max-width: calc(#{breakpoints.$breakpoint-xl} - 0.02rem)) {
+    @content;
+  }
+}
+
+@mixin between-md-lg {
+  @media (min-width: breakpoints.$breakpoint-md) and (max-width: calc(#{breakpoints.$breakpoint-lg} - 0.02rem)) {
+    @content;
+  }
+}

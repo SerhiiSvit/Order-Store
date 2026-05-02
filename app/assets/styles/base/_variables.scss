@@ -1,0 +1,8 @@
+@use "../tokens/colors" as colors;
+@use "../tokens/spacing" as spacing;
+@use "../tokens/typography" as typography;
+
+$font-family-primary: typography.$font-family-primary;
+$font-family-display: typography.$font-family-display;
+$container-width: spacing.$container-width;
+$color-accent: colors.$color-accent;

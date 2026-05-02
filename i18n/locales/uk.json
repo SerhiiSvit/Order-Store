@@ -1,0 +1,113 @@
+{
+  "headerNav": {
+    "home": "Головна",
+    "shop": "Магазин",
+    "how": "Як це працює",
+    "faq": "Часті питання",
+    "account": "Профіль",
+    "cart": "Кошик",
+    "auth": "Вхід",
+    "about": "Про проєкт"
+  },
+  "footerNav": {
+    "home": "Головна",
+    "shop": {
+      "catalog": "Магазин",
+      "featured": "Рекомендована кава",
+      "subscription": "Підписка"
+    },
+    "help": {
+      "delivery": "Доставка",
+      "returns": "Повернення",
+      "contact": "Контакти",
+      "faq": "Часті питання"
+    },
+    "account": {
+      "auth": "Вхід",
+      "profile": "Мій профіль",
+      "subscription": "Мої підписки",
+      "order": "Замовлення"
+    },
+    "social": { "instagram": "Instagram", "linkedin": "LinkedIn", "facebook": "Facebook" },
+    "legal": {
+      "privacy": "Політика конфіденційності",
+      "subscription": "Умови підписки",
+      "cookies": "Політика файлів cookie",
+      "terms": "Умови обслуговування"
+    }
+  },
+  "home": {
+    "title": "Фундамент Brewly Store готовий",
+    "subtitle": "Базовий стек, архітектурні конвенції й workflow вирівняні для командної розробки.",
+    "status": "Базова темна тема увімкнена",
+    "progress": {
+      "title": "Що вже зроблено",
+      "one": "Розгорнуто Nuxt 4 проєкт і підключено основні модулі.",
+      "two": "Налаштовано структуру компонентів, сторінок і стилів за правилами команди.",
+      "three": "Додано dark-first UI базу та обов'язковий BEM-підхід.",
+      "four": "Підключено стартову тестову базу з Vitest і базові перевірки."
+    },
+    "faqTitle": "Швидкий FAQ",
+    "socialsTitle": "Соцмережі",
+    "socials": {
+      "x": "X / Twitter",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    },
+    "faq": {
+      "one": {
+        "q": "Як організована структура компонентів?",
+        "a": "Feature-компоненти групуються за доменами (наприклад home/HomeHero.vue), а перевикористовувані примітиви зберігаються в ui/."
+      },
+      "two": {
+        "q": "Як організовані стилі?",
+        "a": "SCSS повторює ту саму шарову структуру через index.scss для передбачуваних імпортів і масштабування."
+      }
+    }
+  },
+  "about": {
+    "title": "Про цей проєкт",
+    "description": "Базова конфігурація Nuxt 4 із шаровою архітектурою, dark-first стилем і модульними конвенціями.",
+    "mission": "Ми будуємо масштабований storefront із передбачуваною структурою, чітким workflow і перевикористовуваними UI-блоками для командної швидкості.",
+    "principlesTitle": "Ключові принципи",
+    "principles": {
+      "one": {
+        "title": "Архітектура по шарах",
+        "text": "Сторінки оркеструють, composables інкапсулюють логіку, а UI-компоненти лишаються максимально чистими."
+      },
+      "two": {
+        "title": "Єдиний flow команди",
+        "text": "Однакові правила для структури папок, найменувань та delivery-процесу в кожній задачі."
+      },
+      "three": {
+        "title": "Продакшн-фокус",
+        "text": "Кожна зміна проходить перевірки та завершується чітким ручним commit message у визначеному форматі."
+      }
+    },
+    "stackTitle": "Поточний стек",
+    "stack": {
+      "one": "Nuxt 4 + Vue 3 (Composition API)",
+      "two": "Pinia для shared state",
+      "three": "TailwindCSS + SCSS (dark-first tokens)",
+      "four": "Nuxt i18n, Sitemap, Icon, Fonts"
+    },
+    "workflowTitle": "Командний workflow",
+    "workflowText": "Працюємо по ланцюжку: Backlog -> Issue -> In Progress -> Implementation -> Done -> Dev Log -> Commit."
+  },
+  "cart": {
+    "title": "Кошик",
+    "description": "Кошик з товарами"
+  },
+  "auth": {
+    "sigIn": { "title": "Увійти", "description": "Вхід в акаунт користувача" },
+    "register": { "title": "Реєстрація", "description": "Реєстрація новго користувача" }
+  },
+  "account": {
+    "title": "Профіль",
+    "description": "Профіль коитувача"
+  },
+  "catalog": {
+    "title": "Каталог",
+    "description": "Показати товари"
+  }
+}
