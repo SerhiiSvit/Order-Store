@@ -23,8 +23,10 @@
   --color-ui-surface-strong: #{colors.$color-ui-surface-strong};
   --color-ui-border: #{colors.$color-ui-border};
 
-  --font-family-primary: #{typography.$font-family-primary};
-  --font-family-display: #{typography.$font-family-display};
+  --font-family-regular: #{typography.$font-family-regular};
+  --font-family-medium: #{typography.$font-family-medium};
+  --font-family-semibold: #{typography.$font-family-semibold};
+  --font-family-bold: #{typography.$font-family-bold};
   --font-size-xs: #{typography.$font-size-xs};
   --font-size-sm: #{typography.$font-size-sm};
   --font-size-base: #{typography.$text-body-size};

@@ -1,4 +1,4 @@
 spec:
   containers:
-  - name: frontend
-    image: 851334204103.dkr.ecr.eu-north-1.amazonaws.com/brewly-frontend:latest
+    - name: frontend
+      image: 851334204103.dkr.ecr.eu-north-1.amazonaws.com/order-frontend:latest

@@ -1,0 +1,124 @@
+<script setup lang="ts">
+const legalPages = [
+  { label: 'Terms and conditions', to: '#' },
+  { label: 'Privacy', to: '#' },
+  { label: 'Cookies', to: '#' },
+  { label: 'Modern Slavery Statement', to: '#' }
+]
+
+const importantLinks = [
+  { label: 'Get help', to: '#' },
+  { label: 'Add your restaurant', to: '#' },
+  { label: 'Sign up to deliver', to: '#' },
+  { label: 'Create a business account', to: '#' }
+]
+
+const socialLinks = [
+  { alt: 'Facebook', src: '/icons/facebook.svg' },
+  { alt: 'Instagram', src: '/icons/instagram.svg' },
+  { alt: 'Tik tok', src: '/icons/tiktok.svg' },
+  { alt: 'Snapchat', src: '/icons/snapchat.svg' }
+]
+</script>
+
+<template>
+  <div class="w-full bg-[#d9d9d9]/60">
+    <div
+      class="container mx-auto grid grid-cols-1 gap-10 pb-[58px] pt-[90px] lg:grid-cols-[minmax(280px,420px)_minmax(320px,1fr)_220px_220px]"
+    >
+      <div class="flex flex-col">
+        <img class="h-auto w-[220px] max-w-full lg:w-[268px]" alt="Logo" src="/logo-footer.png" />
+        <img
+          class="mt-8 h-auto w-[300px] max-w-full lg:w-[361px]"
+          alt="App store badges en"
+          src="/app-store-badges-en.png"
+        />
+        <p
+          class="mt-5 text-[15px] font-normal leading-[normal] text-black [font-family:'Poppins',Helvetica]"
+        >
+          Company # 490039-445, Registered with
+          <br />
+          House of companies.
+        </p>
+      </div>
+
+      <div class="flex flex-col">
+        <h2
+          class="text-lg font-bold leading-[43px] text-[#03081f] [font-family:'Poppins',Helvetica]"
+        >
+          Get Exclusive Deals in your Inbox
+        </h2>
+
+        <form class="mt-4 flex w-full max-w-[485px] items-center rounded-[120px] bg-[#d9d9d9]">
+          <input
+            type="email"
+            defaultValue="youremail@gmail.com"
+            aria-label="Email address"
+            class="h-[59px] flex-1 border-0 bg-transparent px-[30px] text-[15px] font-normal leading-[43px] text-[#00000099] shadow-none [font-family:'Poppins',Helvetica] focus-visible:ring-0"
+          />
+          <button
+            type="submit"
+            class="h-[59px] rounded-[120px] bg-[#fc8a06] px-10 text-lg font-medium leading-[normal] text-white [font-family:'Poppins',Helvetica] hover:bg-[#fc8a06]/90"
+          >
+            Subscribe
+          </button>
+        </form>
+
+        <p
+          class="mt-2 text-[13px] font-normal leading-[43px] text-[#03081f] [font-family:'Poppins',Helvetica]"
+        >
+          <span>we wont spam, read our </span>
+          <NuxtLink to="#" class="underline"> email policy </NuxtLink>
+        </p>
+
+        <nav aria-label="Social media" class="mt-3">
+          <ul class="flex items-center gap-[14px]">
+            <li v-for="social in socialLinks" :key="social.alt">
+              <NuxtLink to="#" :aria-label="social.alt" class="block">
+                <img class="h-[45px] w-[45px]" :alt="social.alt" :src="social.src" />
+              </NuxtLink>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <nav aria-label="Legal Pages" class="flex flex-col">
+        <h2
+          class="text-lg font-bold leading-[43px] text-[#03081f] [font-family:'Poppins',Helvetica]"
+        >
+          Legal Pages
+        </h2>
+
+        <ul class="mt-1 space-y-0">
+          <li v-for="item in legalPages" :key="item.label">
+            <NuxtLink
+              :to="item.to"
+              class="text-[15px] font-normal leading-[43px] text-black underline [font-family:'Poppins',Helvetica]"
+            >
+              {{ item.label }}
+            </NuxtLink>
+          </li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Important Links" class="flex flex-col">
+        <h2
+          class="text-lg font-bold leading-[43px] text-[#03081f] [font-family:'Poppins',Helvetica]"
+        >
+          Important Links
+        </h2>
+
+        <ul class="mt-1 space-y-0">
+          <li v-for="item in importantLinks" :key="item.label">
+            <NuxtLink
+              :to="item.to"
+              class="text-[15px] font-normal leading-[43px] text-black underline [font-family:'Poppins',Helvetica]"
+            >
+              {{ item.label }}
+            </NuxtLink>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</template>

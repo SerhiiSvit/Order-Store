@@ -16,6 +16,7 @@ export default <Partial<Config>>{
       colors: {
         brand: {
           primary: 'var(--color-brand-primary)',
+          dark: 'var(--color-brand-dark)',
           hover: 'var(--color-brand-hover)',
           accent: 'var(--color-accent)'
         },

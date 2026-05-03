@@ -1,7 +1,7 @@
 {
-  "name": "brewly-store",
+  "name": "order-store",
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@10.26.2",
   "scripts": {

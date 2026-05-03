@@ -1,37 +1,73 @@
+<script setup lang="ts">
+import AppHeaderLinks from './AppHeaderLinks.vue'
+import AppHeaderPromo from './AppHeaderPromo.vue'
+
+const orderCards = [
+  {
+    step: '1',
+    title: "We've Received your order!",
+    description: 'Awaiting Restaurant acceptance',
+    logoWidth: 'w-[58px]',
+    logoLeft: 'left-[33px]',
+    contentWidth: 'w-[236px]',
+    contentHeight: 'h-[71px]',
+    icon: {
+      src: '/tracking.png',
+      alt: 'Tracking',
+      className: 'absolute top-[42px] left-[202px] w-3 h-3'
+    }
+  },
+  {
+    step: '2',
+    title: 'Order Accepted!',
+    description: 'Your order will be delivered shortly',
+    logoWidth: 'w-[60px]',
+    logoLeft: 'left-[31px]',
+    contentWidth: 'w-[236px]',
+    contentHeight: 'h-[71px]'
+  },
+  {
+    step: '3',
+    title: '',
+    description: '',
+    logoWidth: 'w-[58px]',
+    logoLeft: 'left-[33px]',
+    contentWidth: 'w-[111px]',
+    contentHeight: 'h-7',
+    icon: {
+      src: '/tick-box.png',
+      alt: 'Tick box',
+      className: 'absolute top-[43px] left-[214px] w-[17px] h-[17px]'
+    }
+  }
+]
+
+const metrics = [
+  {
+    value: '546+',
+    label: 'Registered Riders'
+  },
+  {
+    value: '789,900+',
+    label: 'Orders Delivered'
+  },
+  {
+    value: '690+',
+    label: 'Restaurants Partnered'
+  },
+  {
+    value: '17,457+',
+    label: 'Food Items'
+  }
+]
+</script>
+
 <template>
   <header
     class="header bg-bg-base/90 sticky top-0 z-header border-b border-ui-border backdrop-blur"
   >
-    <div class="header__inner mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-      <NuxtLink to="/" class="header__brand text-lg font-semibold tracking-tight text-text-primary"
-        >Brewly Store</NuxtLink
-      >
-      <nav class="header__nav flex items-center gap-4 text-sm text-text-secondary">
-        <NuxtLink to="/catalog" class="header__link transition-colors hover:text-brand-primary">{{
-          $t('headerNav.shop')
-        }}</NuxtLink>
-        <NuxtLink to="#how" class="header__link transition-colors hover:text-brand-primary">{{
-          $t('headerNav.how')
-        }}</NuxtLink>
-        <NuxtLink to="/about" class="header__link transition-colors hover:text-brand-primary">{{
-          $t('headerNav.about')
-        }}</NuxtLink>
-        <NuxtLink to="#faq" class="header__link transition-colors hover:text-brand-primary">{{
-          $t('headerNav.faq')
-        }}</NuxtLink>
-      </nav>
+    <AppHeaderPromo />
 
-      <nav class="header__nav flex items-center gap-4 text-sm text-text-secondary">
-        <NuxtLink to="/account" class="header__link transition-colors hover:text-brand-primary">{{
-          $t('headerNav.account')
-        }}</NuxtLink>
-        <NuxtLink to="/cart" class="header__link transition-colors hover:text-brand-primary">{{
-          $t('headerNav.cart')
-        }}</NuxtLink>
-        <NuxtLink to="/auth" class="header__link transition-colors hover:text-brand-primary">{{
-          $t('headerNav.auth')
-        }}</NuxtLink>
-      </nav>
-    </div>
+    <AppHeaderLinks />
   </header>
 </template>

@@ -3,15 +3,15 @@ import HomeFaq from '~/components/home/HomeFaq.vue'
 import HomeHero from '~/components/home/HomeHero.vue'
 
 useSeoMeta({
-  title: 'Brewly Store',
-  description: 'Nuxt 4 starter for Brewly Store with layered architecture.'
+  title: 'Order Store',
+  description: 'Nuxt 4 starter for Order Store with layered architecture.'
 })
 </script>
 
 <template>
-  <div class="home-page space-y-14">
+  <div class="w-full">
     <HomeHero />
-    <HomeFaq />
+    <!-- <HomeFaq /> -->
   </div>
 </template>
 

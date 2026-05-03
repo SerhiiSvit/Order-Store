@@ -2,7 +2,9 @@
 @use "../tokens/spacing" as spacing;
 @use "../tokens/typography" as typography;
 
-$font-family-primary: typography.$font-family-primary;
-$font-family-display: typography.$font-family-display;
+$font-family-regular: typography.$font-family-regular;
+$font-family-medium: typography.$font-family-medium;
+$font-family-semibold: typography.$font-family-semibold;
+$font-family-bold: typography.$font-family-bold;
 $container-width: spacing.$container-width;
 $color-accent: colors.$color-accent;

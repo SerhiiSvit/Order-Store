@@ -1,67 +1,101 @@
 {
-  "headerNav": {
-    "home": "Home",
-    "shop": "Shop",
-    "how": "How it works",
-    "faq": "FAQ",
-    "account": "Account",
-    "cart": "Cart",
-    "auth": "Sign in",
-    "about": "About"
+  "headerPromotion": {
+    "title": "Get 5% Off your first order,",
+    "promo": "Promo: ORDER5",
+    "location": {
+      "street": "Regent Street",
+      "index": "A4",
+      "city": "A4201, London"
+    },
+    "changeLocation": "Change Location"
   },
-  "footerNav": {
-    "home": "Home",
-    "shop": {
-      "catalog": "Shop",
-      "featured": "Featured coffees",
-      "subscription": "Subscription"
+  "header": {
+    "headerNav": {
+      "home": "Home",
+      "browseMenu": "Browse Menu",
+      "specialOffers": "Special Offers",
+      "restaurants": "Restaurants",
+      "trackOrder": "Track Order"
     },
-    "help": {
-      "delivery": "Shipping info",
-      "returns": "Returns",
-      "contact": "Contact",
-      "faq": "FAQ"
+    "account": "Login/Signup"
+  },
+  "footer": {
+    "title": "Company # 490039-445, Registered withHouse of companies.",
+    "subscribe": {
+      "title": "Get Exclusive Deals in your Inbox",
+      "button": "Subscribe",
+      "emailPolicy": "we wont spam, read our email policy"
     },
-    "account": {
-      "auth": "Sign in",
-      "profile": "My account",
-      "subscription": "My subscription",
-      "order": "Orders"
+    "footerLinks": {
+      "title": "Important Links",
+      "links": {
+        "getHelp": "Get help",
+        "addRestaurant": "Add your restaurant",
+        "signUpDeliver": "Sign up to deliver",
+        "createAccount": "Create a business account"
+      }
     },
     "social": { "instagram": "Instagram", "linkedin": "LinkedIn", "facebook": "Facebook" },
     "legal": {
-      "privacy": "Privacy Policy",
-      "subscription": "Subscription Terms",
-      "cookies": "Cookies Policy",
-      "terms": "Terms of Service"
+      "title": "Legal Pages",
+      "links": {
+        "terms": "Terms and conditions",
+        "privacy": "Privacy",
+        "cookies": "Cookies Policy",
+        "subscription": "Modern Slavery Statement"
+      }
+    },
+    "copyright": {
+      "title": {
+        "titleDev": "Order.uk Copyright",
+        "titleRights": "All Rights Reserved."
+      },
+      "links": {
+        "privacy": "Privacy Policy",
+        "terms": "Terms",
+        "pricing": "Pricing"
+      },
+      "share": "Do not sell or share my personal information"
     }
   },
   "home": {
-    "title": "Brewly Store foundation is ready",
-    "subtitle": "Core stack, architecture conventions, and workflow are aligned for team delivery.",
-    "status": "Dark theme baseline enabled",
-    "progress": {
-      "title": "What has been done",
-      "one": "Nuxt 4 project scaffolded with core modules connected.",
-      "two": "Component, page, and style structure aligned with team conventions.",
-      "three": "Dark-first UI baseline and mandatory BEM approach implemented.",
-      "four": "Initial Vitest testing baseline with core validation checks added."
-    },
-    "faqTitle": "Quick FAQ",
-    "socialsTitle": "Social channels",
-    "socials": {
-      "x": "X / Twitter",
-      "instagram": "Instagram",
-      "youtube": "YouTube"
-    },
-    "faq": {
-      "one": {
-        "q": "How is the component structure organized?",
-        "a": "Feature components are grouped by domain folders (for example home/HomeHero.vue) while reusable primitives stay in ui/."
+    "hero": {
+      "title": "Feast Your Senses, Fast and Fresh",
+      "subtitle": "Order Restaurant food, takeaway and groceries.",
+      "notification": {
+        "one": {
+          "number": "1 now",
+          "title": "We’ve Received your order!",
+          "description": "Awaiting Restaurant acceptance"
+        },
+        "two": {
+          "number": "2 now",
+          "title": "Order Accepted!",
+          "description": "Your order will be delivered shortly"
+        },
+        "three": {
+          "number": "3 now",
+          "title": "Your rider’s nearby!",
+          "description": "They’re almost there - get ready"
+        }
       },
-      "two": {
-        "q": "How are styles organized?",
-        "a": "SCSS mirrors the same layered structure using index.scss files for predictable imports and scaling."
+      "status": { "title": "Enter a postcode to see what we deliver", "search": "Search" }
+    },
+    "exclusiveDeals": {
+      "title": "Up to -40% 🎊 Order.uk exclusive deals"
+    },
+    "popularCategories": {
+      "title": "Order.uk Popular Categories 🤩"
+    },
+    "popularRestaurants": {
+      "title": "Popular Restaurants",
+      "restaurants": {
+        "mcDonald ": "McDonald’s London",
+        "papaJohns": "Papa Johns",
+        "KFC": "KFC West London",
+        "texasChicken": "Texas Chicken",
+        "burgerKing": "Burger King",
+        "shaurma1": "Shaurma 1"
       }
     }
   },

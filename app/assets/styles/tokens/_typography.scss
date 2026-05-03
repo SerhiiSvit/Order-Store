@@ -1,7 +1,8 @@
 /* Font family */
-$font-family-primary: 'OpenSansRegular', sans-serif;
-$font-family-display: 'OpenSansBold', sans-serif;
-$font-family-secondary: 'OpenSansRegular', sans-serif;
+$font-family-regular: "PoppinsRegular", sans-serif;
+$font-family-medium: "PoppinsMedium", sans-serif;
+$font-family-semibold: "PoppinsSemiBold", sans-serif;
+$font-family-bold: "PoppinsBold", sans-serif;
 
 /* Font sizes */
 $font-size-xs: clamp(0.75rem, 0.72rem + 0.12vw, 0.8125rem);
