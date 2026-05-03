@@ -1,13 +1,13 @@
 {
-  "headerNav": {
-    "home": "Головна",
-    "shop": "Магазин",
-    "how": "Як це працює",
-    "faq": "Часті питання",
-    "account": "Профіль",
-    "cart": "Кошик",
-    "auth": "Вхід",
-    "about": "Про проєкт"
+  "header": {
+    "headerNav": {
+      "home": "Головна",
+      "browseMenu": "Browse Menu",
+      "specialOffers": "Special Offers",
+      "restaurants": "Restaurants",
+      "trackOrder": "Track Order"
+    },
+    "account": "Login/Signup"
   },
   "footerNav": {
     "home": "Головна",

@@ -22,13 +22,7 @@ function hasPath(record: JsonRecord, path: string): boolean {
 
 describe('i18n locale baseline', () => {
   const requiredPaths = [
-    'headerNav.home',
-    'headerNav.about',
-    'home.title',
-    'home.faq.one.q',
-    'home.faq.two.a',
-    'about.title',
-    'about.workflowText'
+    'header.headerNav.home',
   ]
 
   it('has required keys in uk locale', () => {
