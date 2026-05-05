@@ -1,6 +1,6 @@
-@use "../tokens/colors" as colors;
-@use "../tokens/spacing" as spacing;
-@use "../tokens/typography" as typography;
+@use '../tokens/colors' as colors;
+@use '../tokens/spacing' as spacing;
+@use '../tokens/typography' as typography;
 
 $font-family-regular: typography.$font-family-regular;
 $font-family-medium: typography.$font-family-medium;

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import HomeFaq from '~/components/home/HomeFaq.vue'
 import HomeHero from '~/components/home/HomeHero.vue'
 
 useSeoMeta({
@@ -11,7 +10,6 @@ useSeoMeta({
 <template>
   <div class="w-full">
     <HomeHero />
-    <!-- <HomeFaq /> -->
   </div>
 </template>
 

@@ -44,9 +44,9 @@ pnpm install
 | `pnpm test`          | —         | Запустити тести                                  |
 | `pnpm test:watch`    | —         | Запустити тести у watch-режимі                   |
 | `pnpm test:coverage` | —         | Згенерувати звіт покриття тестами                |
-| `pnpm sync:dev`      | —         | Синхронізувати `feature/BRS_dev` з `main`        |
-| `pnpm sync:mykola`   | —         | Перебазувати `feature/BRS_mykola` на `BRS_dev`   |
-| `pnpm push:dev`      | —         | Запушити `feature/BRS_dev` у remote              |
+| `pnpm sync:dev`      | —         | Синхронізувати `feature/OSS_dev` з `main`        |
+| `pnpm sync:mykola`   | —         | Перебазувати `feature/OSS_mykola` на `OSS_dev`   |
+| `pnpm push:dev`      | —         | Запушити `feature/OSS_dev` у remote              |
 | `pnpm commit`        | —         | Запустити Commitizen wizard для створення коміту |
 | `pnpm release`       | —         | Згенерувати changelog і підняти версію           |
 | `pnpm release:minor` | —         | Зробити minor release                            |
@@ -67,8 +67,8 @@ pnpm commit
 Приклад коміту:
 
 ```text
-feat(cart): implement cart drawer
-fix(product): correct variant pricing
+fix(layout): finalize sticky header and mobile topbar UI polish
+feat(ui): implement Restaurants page foundation with design-token alignment
 ```
 
 Типи комітів:
@@ -145,29 +145,29 @@ i18n
 Ролі гілок:
 
 - `main` — стабільна production-гілка
-- `feature/BRS_dev` — спільна інтеграційна гілка
-- `feature/BRS_<name>` — персональна гілка розробника, створена від `feature/BRS_dev`
+- `feature/OSS_dev` — спільна інтеграційна гілка
+- `feature/OSS_<name>` — персональна гілка розробника, створена від `feature/OSS_dev`
 
 Порядок роботи:
 
-1. Створити або оновити персональну гілку від `feature/BRS_dev`
-2. Пушити зміни у `feature/BRS_<name>`
-3. Створити PR з персональної гілки у `feature/BRS_dev`
-4. Після інтеграційної перевірки злити `feature/BRS_dev` у `main`
+1. Створити або оновити персональну гілку від `feature/OSS_dev`
+2. Пушити зміни у `feature/OSS_<name>`
+3. Створити PR з персональної гілки у `feature/OSS_dev`
+4. Після інтеграційної перевірки злити `feature/OSS_dev` у `main`
 
 Цикл синхронізації гілок:
 
-Виконувати після завершеного merge flow `feature/BRS_<name>` -> `feature/BRS_dev` -> `main`.
+Виконувати після завершеного merge flow `feature/OSS_<name>` -> `feature/OSS_dev` -> `main`.
 
 1. Оновити інтеграційну гілку з `main`:
-   `git checkout feature/BRS_dev`
-   `git pull origin feature/BRS_dev`
+   `git checkout feature/OSS_dev`
+   `git pull origin feature/OSS_dev`
    `git merge origin/main`
-   `git push origin feature/BRS_dev`
-2. Оновити персональну гілку з `feature/BRS_dev`:
-   `git checkout feature/BRS_<name>`
-   `git pull origin feature/BRS_<name>`
-   `git rebase feature/BRS_dev`
+   `git push origin feature/OSS_dev`
+2. Оновити персональну гілку з `feature/OSS_dev`:
+   `git checkout feature/OSS_<name>`
+   `git pull origin feature/OSS_<name>`
+   `git rebase feature/OSS_dev`
    `git push --force-with-lease`
 
 ---

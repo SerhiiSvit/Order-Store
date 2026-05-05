@@ -15,7 +15,7 @@ const links = [
       <li v-for="link in links" :key="link.key" class="home-socials__item">
         <a
           :href="link.href"
-          class="home-socials__link inline-flex items-center rounded-lg border border-ui-border bg-bg-base px-4 py-2 text-sm font-medium text-text-secondary transition hover:border-brand-primary hover:text-brand-primary"
+          class="home-socials__link inline-flex items-center rounded-lg border border-ui-border bg-bg-base px-4 py-2 font-medium text-sm text-text-secondary transition hover:border-brand-primary hover:text-brand-primary"
         >
           {{ $t(`home.socials.${link.key}`) }}
         </a>

@@ -1,11 +1,6 @@
 <script setup lang="ts">
-const navigationItems = [
-  { label: 'Home', to: '/', active: true },
-  { label: 'Browse Menu', to: '#', active: false },
-  { label: 'Special Offers', to: '#', active: false },
-  { label: 'Restaurants', to: '#', active: false },
-  { label: 'Track Order', to: '#', active: false }
-]
+const { items: navigationItems } = useHeaderNavigation()
+const { to } = useLocalePathSafe()
 </script>
 
 <template>
@@ -18,20 +13,34 @@ const navigationItems = [
 
     <nav class="header__nav">
       <ul class="flex items-center gap-1">
-        <li v-for="item in navigationItems" :key="item.label">
+        <li v-for="item in navigationItems" :key="item.key">
           <NuxtLink
-            :to="item.to"
-            class="font-poppins block rounded-[120px] px-8 py-3 text-sm font-medium transition-colors"
-            :class="[item.active ? 'bg-[#fc8a06] text-white' : 'text-black hover:bg-gray-100']"
+            v-if="item.href"
+            :to="item.href"
+            :aria-current="item.isActive ? 'page' : undefined"
+            class="block rounded-pill px-8 py-3 font-medium text-sm transition-colors"
+            :class="[
+              item.isActive
+                ? 'bg-brand-accent text-text-on-accent'
+                : 'text-text-primary hover:bg-bg-soft'
+            ]"
           >
-            {{ item.label }}
+            {{ $t(item.labelKey) }}
           </NuxtLink>
+
+          <span
+            v-else
+            class="block cursor-default rounded-pill px-8 py-3 font-medium text-sm text-text-muted"
+          >
+            {{ $t(item.labelKey) }}
+          </span>
         </li>
       </ul>
     </nav>
 
     <NuxtLink
-      class="h-auto shrink-0 rounded-[120px] bg-[#03081f] px-6 py-4 text-lg font-medium text-white [font-family:'Poppins',Helvetica] hover:bg-[#03081f]"
+      :to="to('/auth')"
+      class="h-auto shrink-0 rounded-[120px] bg-[#03081f] px-6 py-4 font-medium text-lg text-white [font-family:'Poppins',Helvetica] hover:bg-[#03081f]"
     >
       <span class="flex items-center gap-3">
         <img

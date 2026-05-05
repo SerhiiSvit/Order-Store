@@ -9,7 +9,7 @@
         class="text-[15px] font-normal leading-normal text-black [font-family:'Poppins',Helvetica]"
       >
         <span
-          class="mr-3 text-[25px] font-medium leading-none text-black [font-family:'Poppins',Helvetica]"
+          class="mr-3 font-medium text-[25px] leading-none text-black [font-family:'Poppins',Helvetica]"
         >
           🌟
         </span>
@@ -25,7 +25,7 @@
         <img class="h-[25px] w-[25px]" alt="Location" src="/icons/location.svg" />
 
         <p
-          class="text-[15px] font-medium leading-normal text-[#03081f] [font-family:'Poppins',Helvetica]"
+          class="font-medium text-[15px] leading-normal text-[#03081f] [font-family:'Poppins',Helvetica]"
         >
           <span>{{ $t('headerPromotion.location.street') }}, {{ ' ' }}</span>
 
@@ -38,7 +38,7 @@
 
         <button
           type="button"
-          class="text-sm font-medium leading-normal text-[#fc8a06] underline [font-family:'Poppins',Helvetica]"
+          class="font-medium text-sm leading-normal text-[#fc8a06] underline [font-family:'Poppins',Helvetica]"
         >
           {{ $t('headerPromotion.changeLocation') }}
         </button>
@@ -53,7 +53,7 @@
 
         <div class="border-right-[#fff] flex h-full w-[111px] items-center justify-center">
           <span
-            class="text-base font-semibold leading-normal text-white [font-family:'Poppins',Helvetica]"
+            class="font-semibold text-base leading-normal text-white [font-family:'Poppins',Helvetica]"
           >
             23 Items
           </span>
@@ -61,7 +61,7 @@
 
         <div class="border-right-[#fff] flex h-full w-[115px] items-center justify-center">
           <span
-            class="text-base font-semibold leading-normal text-white [font-family:'Poppins',Helvetica]"
+            class="font-semibold text-base leading-normal text-white [font-family:'Poppins',Helvetica]"
           >
             GBP 79.89
           </span>
