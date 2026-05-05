@@ -1,101 +1,117 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import UiSectionTitle from '~/components/ui/UiSectionTitle.vue'
-const orderCards = [
+
+const { t } = useI18n()
+
+const orderCards = computed(() => [
   {
-    step: '1',
-    title: "We've Received your order!",
-    description: 'Awaiting Restaurant acceptance',
+    step: t('home.hero.notification.one.number'),
+    userName: t('home.hero.notification.one.userName'),
+    userIcon: '/icons/ok.svg',
+    time: t('home.hero.notification.one.time'),
+    title: t('home.hero.notification.one.title'),
+    description: t('home.hero.notification.one.description')
   },
   {
-    step: '2',
-    title: 'Order Accepted!',
-    description: 'Your order will be delivered shortly',
+    step: t('home.hero.notification.two.number'),
+    userName: t('home.hero.notification.two.userName'),
+    userIcon: '/icons/ok.svg',
+    time: t('home.hero.notification.two.time'),
+    title: t('home.hero.notification.two.title'),
+    description: t('home.hero.notification.two.description')
   },
   {
-    step: '3',
-    title: 'Your rider’s nearby!',
-    description: 'They’re almost there - get ready',
+    step: t('home.hero.notification.three.number'),
+    userName: t('home.hero.notification.three.userName'),
+    userIcon: '/icons/ok.svg',
+    time: t('home.hero.notification.three.time'),
+    title: t('home.hero.notification.three.title'),
+    description: t('home.hero.notification.three.description')
   }
-]
+])
 </script>
 
 <template>
-  <section class="container w-full bg-[#03081f] rounded-[16px]">
-    <!-- <UiSectionTitle
-      overline="Nuxt 4 Starter"
-      :title="$t('home.title')"
-      :subtitle="$t('home.subtitle')"
-    /> -->
+  <section class="container mb-[53px] w-full rounded-[16px] bg-[#03081f]">
     <div class="grid min-h-[610px] grid-cols-[1fr_626px]">
-      <div class="flex w-[510px] flex-col justify-center ml-[57px]">
+      <div class="ml-[57px] flex w-[510px] flex-col justify-center">
         <p class="text-base font-normal leading-[66px] text-white">
-          Order Restaurant food, takeaway and groceries.
+          {{ t('home.hero.suptitle') }}
         </p>
 
-        <h1 class="text-[54px] font-semibold leading-[66px] tracking-[0] text-transparent font-weight-semibold">
-          <span class="text-white">Feast Your Senses, </span>
-          <span class="text-[#fc8a06]">Fast and Fresh</span>
+        <h1
+          class="font-weight-semibold text-[54px] font-semibold leading-[66px] tracking-[0] text-transparent"
+        >
+          <span class="text-white">{{ t('home.hero.title') }} {{ ' ' }}</span>
+          <span class="text-[#fc8a06]">{{ t('home.hero.subtitle') }}</span>
         </h1>
 
         <div class="mt-8 w-[467px]">
           <p class="pl-[21px] text-[13px] font-normal leading-[66px] text-white">
-            Enter a postcode to see what we deliver
+            {{ t('home.hero.status.title') }}
           </p>
 
           <div class="relative mt-[-2px] flex h-[57px] items-center rounded-[120px] bg-white">
             <input
               defaultValue=""
-              placeholder="e.g. EC4R 3TE"
+              :placeholder="t('home.hero.status.placeholder')"
               class="h-full flex-1 rounded-[120px] border-0 bg-transparent pl-7 pr-[200px] text-[15px] font-normal text-[#000000cc] shadow-none placeholder:text-[#000000cc] focus-visible:ring-0"
             />
 
             <button
               class="absolute right-[0px] top-[0px] h-[57px] w-[188px] rounded-[120px] bg-[#fc8a06] text-base font-bold text-white hover:bg-[#fc8a06]"
             >
-              Search
+              {{ t('home.hero.status.button') }}
             </button>
           </div>
         </div>
       </div>
 
-      <div class="flex items-end relative">
+      <div class="relative flex items-end">
         <img
-          class="h-[541px] w-[465px] left-[-220px] object-cover absolute bottom-0 z-20"
+          class="absolute bottom-0 left-[-220px] z-20 h-[541px] w-[465px] object-cover"
           alt="hero image"
           src="/heroImage.png"
         />
 
         <img
-          class="h-[541px] w-[465px] left-[-400px] object-cover absolute bottom-0 z-0 opacity-30 grayscale brightness-50 blur-[1px] transition-all"
+          class="absolute bottom-0 left-[-400px] z-0 h-[541px] w-[465px] object-cover opacity-30 blur-[1px] brightness-50 grayscale transition-all"
           alt="hero image background"
           src="/heroImageBack.png"
         />
 
-        <div
-          class=" w-full h-[565px] rounded-[282.5px_0px_12px_0px] bg-[#fc8a06] p-8"
-        >
-          <div class="flex w-full h-full items-end justify-end flex-col gap-[38px]">
-            <div v-for="card in orderCards" :key="card.step" class="relative flex justify-end items-center h-full">
+        <div class="h-[565px] w-full rounded-[282.5px_0px_12px_0px] bg-[#fc8a06] p-8">
+          <div class="flex h-full w-full flex-col items-end justify-end gap-[38px]">
+            <div
+              v-for="(card, index) in orderCards"
+              class="relative flex h-full items-center justify-end"
+              :key="card.step"
+              :style="{ marginRight: index === 1 ? '0px' : index === 2 ? '60px' : '100px' }"
+            >
               <div
                 class="absolute right-[10px] top-[-35px] text-[48px] font-semibold leading-normal text-transparent [-webkit-text-stroke:0.2px_#ffffff]"
               >
-                {{ card.step }}
+                <p>{{ card.step }}</p>
               </div>
 
               <div
-                class=" h-[100px] w-[344px] px-2 py-4 bg-[#f8f8f8]  rounded-[16px_16px_16px_16px] bg-cover bg-[50%_50%] text-[#000000]"
+                class="w-[344px] rounded-[16px_16px_16px_16px] bg-[#f8f8f8] bg-cover bg-[50%_50%] px-2 py-4 text-[14px] text-[#000000]"
               >
-                <img
-                  class=" h-[15px] object-cover mb-2 flex" alt=Logo src=/logo.png
-                />
+                <div class="mb-2 flex items-center justify-between text-[16px] text-[#03081f]">
+                  <div class="flex items-center gap-3">
+                    <img class="h-[18px] object-cover" :alt="card.userName" :src="card.userIcon" />
+                    <p class="">{{ card.userName }}</p>
+                  </div>
+                  <p class="text-[12px]">{{ card.time }}</p>
+                </div>
 
                 <p class="mb-1 font-semibold">
                   {{ card.title }}
                 </p>
 
-                <p
-                  class=""
-                >
+                <p class="">
                   {{ card.description }}
                 </p>
               </div>
