@@ -1,6 +1,18 @@
 <script setup lang="ts">
 const { items: navigationItems } = useHeaderNavigation()
 const { to } = useLocalePathSafe()
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
+const navigationItems = computed(() => [
+  { label: t('header.headerNav.home'), to: '/', active: true },
+  { label: t('header.headerNav.browseMenu'), to: '#', active: false },
+  { label: t('header.headerNav.specialOffers'), to: '#', active: false },
+  { label: t('header.headerNav.restaurants'), to: '#', active: false },
+  { label: t('header.headerNav.trackOrder'), to: '#', active: false }
+])
 </script>
 
 <template>
@@ -18,10 +30,10 @@ const { to } = useLocalePathSafe()
             v-if="item.href"
             :to="item.href"
             :aria-current="item.isActive ? 'page' : undefined"
-            class="block rounded-pill px-8 py-3 font-medium text-sm transition-colors"
+            class="block rounded-pill px-8 py-3 text-sm font-medium transition-colors"
             :class="[
               item.isActive
-                ? 'bg-brand-accent text-text-on-accent'
+                ? 'text-text-on-accent bg-brand-accent'
                 : 'text-text-primary hover:bg-bg-soft'
             ]"
           >
@@ -30,7 +42,7 @@ const { to } = useLocalePathSafe()
 
           <span
             v-else
-            class="block cursor-default rounded-pill px-8 py-3 font-medium text-sm text-text-muted"
+            class="block cursor-default rounded-pill px-8 py-3 text-sm font-medium text-text-muted"
           >
             {{ $t(item.labelKey) }}
           </span>
@@ -40,7 +52,7 @@ const { to } = useLocalePathSafe()
 
     <NuxtLink
       :to="to('/auth')"
-      class="h-auto shrink-0 rounded-[120px] bg-[#03081f] px-6 py-4 font-medium text-lg text-white [font-family:'Poppins',Helvetica] hover:bg-[#03081f]"
+      class="h-auto shrink-0 rounded-[120px] bg-[#03081f] px-6 py-4 text-lg font-medium text-white [font-family:'Poppins',Helvetica] hover:bg-[#03081f]"
     >
       <span class="flex items-center gap-3">
         <img

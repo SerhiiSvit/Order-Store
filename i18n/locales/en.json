@@ -20,13 +20,15 @@
     "account": "Login/Signup"
   },
   "footer": {
-    "title": "Company # 490039-445, Registered withHouse of companies.",
+    "title": "Company # 490039-445, Registered with House of companies.",
     "subscribe": {
       "title": "Get Exclusive Deals in your Inbox",
       "button": "Subscribe",
-      "emailPolicy": "we wont spam, read our email policy"
+      "placeholder": "youremailgmail.com",
+      "emailText": "we wont spam, read our",
+      "emailPolicy": "email policy"
     },
-    "footerLinks": {
+    "link": {
       "title": "Important Links",
       "links": {
         "getHelp": "Get help",
@@ -35,7 +37,13 @@
         "createAccount": "Create a business account"
       }
     },
-    "social": { "instagram": "Instagram", "linkedin": "LinkedIn", "facebook": "Facebook" },
+    "social": {
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "tiktok": "TikTok",
+      "facebook": "Facebook",
+      "snapchat": "Snapchat"
+    },
     "legal": {
       "title": "Legal Pages",
       "links": {
@@ -47,10 +55,11 @@
     },
     "copyright": {
       "title": {
-        "titleDev": "Order.uk Copyright",
+        "titleLogo": "Order.uk",
+        "titleDev": "Copyright",
         "titleRights": "All Rights Reserved."
       },
-      "links": {
+      "link": {
         "privacy": "Privacy Policy",
         "terms": "Terms",
         "pricing": "Pricing"
@@ -60,39 +69,58 @@
   },
   "home": {
     "hero": {
-      "title": "Feast Your Senses, Fast and Fresh",
-      "subtitle": "Order Restaurant food, takeaway and groceries.",
+      "title": "Feast Your Senses,",
+      "subtitle": "Fast and Fresh",
+      "suptitle": "Order Restaurant food, takeaway and groceries.",
       "notification": {
         "one": {
-          "number": "1 now",
+          "number": "1",
+          "userName": "Delivvvver",
+          "time": "now",
           "title": "We’ve Received your order!",
           "description": "Awaiting Restaurant acceptance"
         },
         "two": {
-          "number": "2 now",
+          "number": "2",
+          "userName": "Deliiiiver",
+          "time": "now",
           "title": "Order Accepted!",
           "description": "Your order will be delivered shortly"
         },
         "three": {
-          "number": "3 now",
+          "number": "3",
+          "userName": "DeliverWood",
+          "time": "now",
           "title": "Your rider’s nearby!",
           "description": "They’re almost there - get ready"
         }
       },
-      "status": { "title": "Enter a postcode to see what we deliver", "search": "Search" }
+      "status": {
+        "title": "Enter a postcode to see what we deliver",
+        "button": "Search",
+        "placeholder": "e.g. EC4R 3TE"
+      }
     },
     "exclusiveDeals": {
       "title": "Up to -40% 🎊 Order.uk exclusive deals"
     },
     "popularCategories": {
-      "title": "Order.uk Popular Categories 🤩"
+      "title": "Order.uk Popular Categories 🤩",
+      "categories": {
+        "burgers": { "name": "Burgers & Fast food", "count": "21 Restaurants" },
+        "salads": { "name": "Salads", "count": "32 Restaurants" },
+        "pasta": { "name": "Pasta & Casuals", "count": "4 Restaurants" },
+        "pizza": { "name": "Pizza", "count": "32 Restaurants" },
+        "breakfast": { "name": "Breakfast", "count": "4 Restaurants" },
+        "soups": { "name": "Soups", "count": "32 Restaurants" }
+      }
     },
     "popularRestaurants": {
       "title": "Popular Restaurants",
       "restaurants": {
-        "mcDonald ": "McDonald’s London",
+        "mcDonald": "McDonald’s London",
         "papaJohns": "Papa Johns",
-        "KFC": "KFC West London",
+        "kfc": "KFC West London",
         "texasChicken": "Texas Chicken",
         "burgerKing": "Burger King",
         "shaurma1": "Shaurma 1"
