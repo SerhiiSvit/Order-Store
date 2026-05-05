@@ -1,19 +1,25 @@
 /* Font family */
-$font-family-regular: "PoppinsRegular", sans-serif;
-$font-family-medium: "PoppinsMedium", sans-serif;
-$font-family-semibold: "PoppinsSemiBold", sans-serif;
-$font-family-bold: "PoppinsBold", sans-serif;
+$font-family-base: 'PoppinsRegular', sans-serif;
+$font-family-heading: 'PoppinsSemiBold', sans-serif;
+$font-family-regular: $font-family-base;
+$font-family-medium: 'PoppinsMedium', sans-serif;
+$font-family-semibold: 'PoppinsSemiBold', sans-serif;
+$font-family-bold: 'PoppinsBold', sans-serif;
 
 /* Font sizes */
-$font-size-xs: clamp(0.75rem, 0.72rem + 0.12vw, 0.8125rem);
-$font-size-sm: clamp(0.875rem, 0.84rem + 0.14vw, 0.95rem);
-$font-size-md: clamp(1rem, 0.96rem + 0.18vw, 1.125rem);
-$font-size-lg: clamp(1.125rem, 1.06rem + 0.28vw, 1.3125rem);
-$font-size-xl: clamp(1.25rem, 1.12rem + 0.45vw, 1.625rem);
-$font-size-2xl: clamp(1.5rem, 1.28rem + 0.75vw, 2rem);
-$font-size-3xl: clamp(2rem, 1.62rem + 1.2vw, 2.75rem);
-$font-size-4xl: clamp(2.5rem, 2rem + 1.7vw, 3.75rem);
-$font-size-5xl: clamp(3rem, 2.35rem + 2.2vw, 4.5rem);
+$font-size-xs: 0.75rem;
+$font-size-sm: 0.8125rem;
+$font-size-base: 0.875rem;
+$font-size-md: 0.9375rem;
+$font-size-lg: 1rem;
+$font-size-xl: 1.125rem;
+$font-size-2xl: 1.25rem;
+$font-size-3xl: 1.5rem;
+$font-size-4xl: 2rem;
+$font-size-5xl: 2.25rem;
+$font-size-6xl: 2.75rem;
+$font-size-7xl: 3.375rem;
+$font-size-8xl: 4.25rem;
 
 /* Font weights */
 $font-weight-regular: 400;
@@ -23,8 +29,11 @@ $font-weight-bold: 700;
 
 /* Line heights */
 $line-height-tight: 1.2;
-$line-height-normal: 1.5;
-$line-height-relaxed: 1.7;
+$line-height-base: 1.5625rem;
+$line-height-lg: 2.5rem;
+$line-height-xl: 4.125rem;
+$line-height-heading: 1.2;
+$line-height-body: 1.6;
 
 /* Letter spacing */
 $letter-spacing-tight: -0.02em;
@@ -32,14 +41,14 @@ $letter-spacing-normal: 0;
 $letter-spacing-wide: 0.05em;
 
 /* Headings */
-$heading-h1-size: $font-size-5xl;
+$heading-h1-size: $font-size-8xl;
 $heading-h2-size: $font-size-4xl;
 $heading-h3-size: $font-size-3xl;
 
 /* Body */
-$text-body-size: $font-size-md;
+$text-body-size: $font-size-base;
 $text-small-size: $font-size-sm;
 
 /* UI */
-$text-button-size: $font-size-sm;
+$text-button-size: $font-size-lg;
 $text-label-size: $font-size-xs;

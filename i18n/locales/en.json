@@ -143,5 +143,10 @@
   "catalog": {
     "title": "Catalog",
     "description": "Product grid"
+  },
+  "restaurants": {
+    "title": "Restaurants",
+    "description": "The restaurants listing page is now connected to the route and ready for phased implementation.",
+    "placeholder": "This area will host the Figma-driven Restaurants page with navigation, filters, restaurant cards, and promo sections."
   }
 }

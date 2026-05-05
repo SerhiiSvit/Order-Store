@@ -1,19 +1,26 @@
-@use "../tokens/colors" as colors;
-@use "../tokens/breakpoints" as breakpoints;
-@use "../tokens/radius" as radius;
-@use "../tokens/shadows" as shadows;
-@use "../tokens/spacing" as spacing;
-@use "../tokens/typography" as typography;
-@use "../tokens/z-index" as z-index;
+@use '../tokens/colors' as colors;
+@use '../tokens/breakpoints' as breakpoints;
+@use '../tokens/radius' as radius;
+@use '../tokens/shadows' as shadows;
+@use '../tokens/spacing' as spacing;
+@use '../tokens/typography' as typography;
+@use '../tokens/z-index' as z-index;
 
 :root {
   --color-text-primary: #{colors.$color-text-primary};
   --color-text-secondary: #{colors.$color-text-secondary};
   --color-text-muted: #{colors.$color-text-muted};
+  --color-text-on-dark: #{colors.$color-text-on-dark};
+  --color-text-on-accent: #{colors.$color-text-on-accent};
 
   --color-brand-primary: #{colors.$color-brand-primary};
+  --color-brand-dark: #{colors.$color-brand-dark};
   --color-brand-hover: #{colors.$color-brand-hover};
   --color-accent: #{colors.$color-accent};
+  --color-accent-hover: #{colors.$color-accent-hover};
+  --color-online: #{colors.$color-online};
+  --color-white: #{colors.$color-white};
+  --color-black: #{colors.$color-black};
 
   --color-bg-base: #{colors.$color-bg-base};
   --color-bg-soft: #{colors.$color-bg-soft};
@@ -22,24 +29,37 @@
   --color-ui-surface: #{colors.$color-ui-surface};
   --color-ui-surface-strong: #{colors.$color-ui-surface-strong};
   --color-ui-border: #{colors.$color-ui-border};
+  --color-ui-border-light: #{colors.$color-ui-border-light};
 
+  --font-family-base: #{typography.$font-family-base};
+  --font-family-heading: #{typography.$font-family-heading};
+  --font-family-primary: #{typography.$font-family-base};
+  --font-family-display: #{typography.$font-family-heading};
   --font-family-regular: #{typography.$font-family-regular};
   --font-family-medium: #{typography.$font-family-medium};
   --font-family-semibold: #{typography.$font-family-semibold};
   --font-family-bold: #{typography.$font-family-bold};
   --font-size-xs: #{typography.$font-size-xs};
   --font-size-sm: #{typography.$font-size-sm};
-  --font-size-base: #{typography.$text-body-size};
+  --font-size-base: #{typography.$font-size-base};
+  --font-size-md: #{typography.$font-size-md};
   --font-size-lg: #{typography.$font-size-lg};
   --font-size-xl: #{typography.$font-size-xl};
   --font-size-2xl: #{typography.$font-size-2xl};
   --font-size-3xl: #{typography.$font-size-3xl};
   --font-size-4xl: #{typography.$font-size-4xl};
   --font-size-5xl: #{typography.$font-size-5xl};
-  --line-height-base: #{typography.$line-height-normal};
+  --font-size-6xl: #{typography.$font-size-6xl};
+  --font-size-7xl: #{typography.$font-size-7xl};
+  --font-size-8xl: #{typography.$font-size-8xl};
+  --line-height-base: #{typography.$line-height-base};
   --line-height-tight: #{typography.$line-height-tight};
-  --line-height-relaxed: #{typography.$line-height-relaxed};
+  --line-height-lg: #{typography.$line-height-lg};
+  --line-height-xl: #{typography.$line-height-xl};
+  --line-height-heading: #{typography.$line-height-heading};
+  --line-height-body: #{typography.$line-height-body};
   --letter-spacing-tight: #{typography.$letter-spacing-tight};
+  --letter-spacing-normal: #{typography.$letter-spacing-normal};
   --letter-spacing-wide: #{typography.$letter-spacing-wide};
 
   --container-width: #{spacing.$container-width};
@@ -49,22 +69,31 @@
   --radius-md: #{radius.$radius-md};
   --radius-lg: #{radius.$radius-lg};
   --radius-xl: #{radius.$radius-xl};
+  --radius-2xl: #{radius.$radius-2xl};
   --radius-pill: #{radius.$radius-pill};
 
+  --shadow-sm: #{shadows.$shadow-sm};
+  --shadow-md: #{shadows.$shadow-md};
+  --shadow-lg: #{shadows.$shadow-lg};
   --shadow-soft: #{shadows.$shadow-soft};
   --shadow-card: #{shadows.$shadow-card};
   --shadow-elevated: #{shadows.$shadow-elevated};
 
   --z-base: #{z-index.$z-base};
+  --z-sticky: #{z-index.$z-sticky};
   --z-header: #{z-index.$z-header};
   --z-dropdown: #{z-index.$z-dropdown};
   --z-overlay: #{z-index.$z-overlay};
   --z-modal: #{z-index.$z-modal};
   --z-toast: #{z-index.$z-toast};
 
+  --breakpoint-mobile: #{breakpoints.$breakpoint-mobile};
   --breakpoint-sm: #{breakpoints.$breakpoint-sm};
+  --breakpoint-tablet: #{breakpoints.$breakpoint-tablet};
   --breakpoint-md: #{breakpoints.$breakpoint-md};
+  --breakpoint-desktop: #{breakpoints.$breakpoint-desktop};
   --breakpoint-lg: #{breakpoints.$breakpoint-lg};
+  --breakpoint-wide: #{breakpoints.$breakpoint-wide};
   --breakpoint-xl: #{breakpoints.$breakpoint-xl};
   --breakpoint-2xl: #{breakpoints.$breakpoint-2xl};
 }

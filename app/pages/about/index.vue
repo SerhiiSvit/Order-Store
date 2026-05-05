@@ -25,7 +25,7 @@ useSeoMeta({
       <UiSectionTitle :title="$t('about.principlesTitle')" />
       <div class="about-page__principles-grid grid gap-4 md:grid-cols-3">
         <UiCard class="about-page__principle-card">
-          <h3 class="about-page__principle-title mb-2 text-lg font-medium text-text-primary">
+          <h3 class="about-page__principle-title mb-2 font-medium text-lg text-text-primary">
             {{ $t('about.principles.one.title') }}
           </h3>
           <p class="about-page__principle-text text-text-muted">
@@ -33,7 +33,7 @@ useSeoMeta({
           </p>
         </UiCard>
         <UiCard class="about-page__principle-card">
-          <h3 class="about-page__principle-title mb-2 text-lg font-medium text-text-primary">
+          <h3 class="about-page__principle-title mb-2 font-medium text-lg text-text-primary">
             {{ $t('about.principles.two.title') }}
           </h3>
           <p class="about-page__principle-text text-text-muted">
@@ -41,7 +41,7 @@ useSeoMeta({
           </p>
         </UiCard>
         <UiCard class="about-page__principle-card">
-          <h3 class="about-page__principle-title mb-2 text-lg font-medium text-text-primary">
+          <h3 class="about-page__principle-title mb-2 font-medium text-lg text-text-primary">
             {{ $t('about.principles.three.title') }}
           </h3>
           <p class="about-page__principle-text text-text-muted">
@@ -78,9 +78,9 @@ useSeoMeta({
     </section>
 
     <section
-      class="about-page__workflow space-y-4 rounded-2xl border border-brand-primary/20 bg-surface-strong p-6"
+      class="about-page__workflow border-brand-primary/20 space-y-4 rounded-2xl border bg-surface-strong p-6"
     >
-      <h3 class="about-page__workflow-title text-xl font-semibold text-brand-primary">
+      <h3 class="about-page__workflow-title font-semibold text-xl text-brand-primary">
         {{ $t('about.workflowTitle') }}
       </h3>
       <p class="about-page__workflow-text text-text-secondary">{{ $t('about.workflowText') }}</p>

@@ -14,7 +14,7 @@ defineProps<{
     >
       {{ overline }}
     </p>
-    <h2 class="ui-section-title__title text-3xl font-semibold tracking-tight text-text-primary">
+    <h2 class="ui-section-title__title font-semibold text-3xl tracking-tight text-text-primary">
       {{ title }}
     </h2>
     <p v-if="subtitle" class="ui-section-title__subtitle max-w-2xl text-text-muted">

@@ -1,4 +1,4 @@
-@use "../tokens/breakpoints" as breakpoints;
+@use '../tokens/breakpoints' as breakpoints;
 
 @mixin up-sm {
   @media (min-width: breakpoints.$breakpoint-sm) {
