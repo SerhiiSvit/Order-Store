@@ -1,11 +1,16 @@
 <script setup lang="ts">
-const navigationItems = [
-  { label: 'Home', to: '/', active: true },
-  { label: 'Browse Menu', to: '#', active: false },
-  { label: 'Special Offers', to: '#', active: false },
-  { label: 'Restaurants', to: '#', active: false },
-  { label: 'Track Order', to: '#', active: false }
-]
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
+const navigationItems = computed(() => [
+  { label: t('header.headerNav.home'), to: '/', active: true },
+  { label: t('header.headerNav.browseMenu'), to: '#', active: false },
+  { label: t('header.headerNav.specialOffers'), to: '#', active: false },
+  { label: t('header.headerNav.restaurants'), to: '#', active: false },
+  { label: t('header.headerNav.trackOrder'), to: '#', active: false }
+])
 </script>
 
 <template>

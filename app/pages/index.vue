@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import HomeFaq from '~/components/home/HomeFaq.vue'
 import HomeHero from '~/components/home/HomeHero.vue'
+import HomeMetric from '~/components/home/HomeMetric.vue'
+import HomePopularCategories from '~/components/home/HomePopularCategories.vue'
+import HomePopularRestaurants from '~/components/home/HomePopularRestaurants.vue'
 
 useSeoMeta({
   title: 'Order Store',
@@ -11,7 +14,9 @@ useSeoMeta({
 <template>
   <div class="w-full">
     <HomeHero />
-    <!-- <HomeFaq /> -->
+    <HomePopularCategories />
+    <HomePopularRestaurants />
+    <HomeMetric />
   </div>
 </template>
 

@@ -14,11 +14,9 @@
           🌟
         </span>
 
-        <span class="font-medium">{{ $t('headerPromotion.title') }}</span>
+        <span class="font-medium">{{ $t('headerPromotion.title') }} {{ ' ' }}</span>
 
-        <span class="font-bold text-[#fc8a06] underline">
-          {{ $t('headerPromotion.promo') }}
-        </span>
+        <span class="font-bold text-[#fc8a06] underline"> {{ $t('headerPromotion.promo') }} </span>
       </div>
 
       <div class="ml-auto mr-10 flex items-center gap-3">

@@ -1,24 +1,29 @@
 <script setup lang="ts">
-const legalPages = [
-  { label: 'Terms and conditions', to: '#' },
-  { label: 'Privacy', to: '#' },
-  { label: 'Cookies', to: '#' },
-  { label: 'Modern Slavery Statement', to: '#' }
-]
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 
-const importantLinks = [
-  { label: 'Get help', to: '#' },
-  { label: 'Add your restaurant', to: '#' },
-  { label: 'Sign up to deliver', to: '#' },
-  { label: 'Create a business account', to: '#' }
-]
+const { t } = useI18n()
 
-const socialLinks = [
-  { alt: 'Facebook', src: '/icons/facebook.svg' },
-  { alt: 'Instagram', src: '/icons/instagram.svg' },
-  { alt: 'Tik tok', src: '/icons/tiktok.svg' },
-  { alt: 'Snapchat', src: '/icons/snapchat.svg' }
-]
+const legalPages = computed(() => [
+  { label: t('footer.legal.links.terms'), to: '#' },
+  { label: t('footer.legal.links.privacy'), to: '#' },
+  { label: t('footer.legal.links.cookies'), to: '#' },
+  { label: t('footer.legal.links.subscription'), to: '#' }
+])
+
+const importantLinks = computed(() => [
+  { label: t('footer.link.links.getHelp'), to: '#' },
+  { label: t('footer.link.links.addRestaurant'), to: '#' },
+  { label: t('footer.link.links.signUpDeliver'), to: '#' },
+  { label: t('footer.link.links.createAccount'), to: '#' }
+])
+
+const socialLinks = computed(() => [
+  { alt: t('footer.social.facebook'), src: '/icons/facebook.svg' },
+  { alt: t('footer.social.instagram'), src: '/icons/instagram.svg' },
+  { alt: t('footer.social.tiktok'), src: '/icons/tiktok.svg' },
+  { alt: t('footer.social.snapchat'), src: '/icons/snapchat.svg' }
+])
 </script>
 
 <template>
@@ -28,17 +33,17 @@ const socialLinks = [
     >
       <div class="flex flex-col">
         <img class="h-auto w-[220px] max-w-full lg:w-[268px]" alt="Logo" src="/logo-footer.png" />
+
         <img
           class="mt-8 h-auto w-[300px] max-w-full lg:w-[361px]"
           alt="App store badges en"
           src="/app-store-badges-en.png"
         />
+
         <p
-          class="mt-5 text-[15px] font-normal leading-[normal] text-black [font-family:'Poppins',Helvetica]"
+          class="mt-5 w-[311px] text-[15px] font-normal leading-[normal] text-black [font-family:'Poppins',Helvetica]"
         >
-          Company # 490039-445, Registered with
-          <br />
-          House of companies.
+          {{ t('footer.title') }}
         </p>
       </div>
 
@@ -46,13 +51,13 @@ const socialLinks = [
         <h2
           class="text-lg font-bold leading-[43px] text-[#03081f] [font-family:'Poppins',Helvetica]"
         >
-          Get Exclusive Deals in your Inbox
+          {{ t('footer.subscribe.title') }}
         </h2>
 
         <form class="mt-4 flex w-full max-w-[485px] items-center rounded-[120px] bg-[#d9d9d9]">
           <input
             type="email"
-            defaultValue="youremail@gmail.com"
+            :placeholder="t('footer.subscribe.placeholder')"
             aria-label="Email address"
             class="h-[59px] flex-1 border-0 bg-transparent px-[30px] text-[15px] font-normal leading-[43px] text-[#00000099] shadow-none [font-family:'Poppins',Helvetica] focus-visible:ring-0"
           />
@@ -60,15 +65,15 @@ const socialLinks = [
             type="submit"
             class="h-[59px] rounded-[120px] bg-[#fc8a06] px-10 text-lg font-medium leading-[normal] text-white [font-family:'Poppins',Helvetica] hover:bg-[#fc8a06]/90"
           >
-            Subscribe
+            {{ t('footer.subscribe.button') }}
           </button>
         </form>
 
         <p
           class="mt-2 text-[13px] font-normal leading-[43px] text-[#03081f] [font-family:'Poppins',Helvetica]"
         >
-          <span>we wont spam, read our </span>
-          <NuxtLink to="#" class="underline"> email policy </NuxtLink>
+          <span>{{ t('footer.subscribe.emailText') }}{{ ' ' }}</span>
+          <NuxtLink to="#" class="underline">{{ t('footer.subscribe.emailPolicy') }}</NuxtLink>
         </p>
 
         <nav aria-label="Social media" class="mt-3">
@@ -82,11 +87,11 @@ const socialLinks = [
         </nav>
       </div>
 
-      <nav aria-label="Legal Pages" class="flex flex-col">
+      <nav aria-label="t('footer.legal.title')" class="flex flex-col">
         <h2
           class="text-lg font-bold leading-[43px] text-[#03081f] [font-family:'Poppins',Helvetica]"
         >
-          Legal Pages
+          {{ t('footer.legal.title') }}
         </h2>
 
         <ul class="mt-1 space-y-0">
@@ -101,11 +106,11 @@ const socialLinks = [
         </ul>
       </nav>
 
-      <nav aria-label="Important Links" class="flex flex-col">
+      <nav aria-label="t('footer.link.title')" class="flex flex-col">
         <h2
           class="text-lg font-bold leading-[43px] text-[#03081f] [font-family:'Poppins',Helvetica]"
         >
-          Important Links
+          {{ t('footer.link.title') }}
         </h2>
 
         <ul class="mt-1 space-y-0">
