@@ -1,11 +1,16 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
 const year = new Date().getFullYear()
 
-const footerLinks = [
-  { label: 'Privacy Policy', to: '#' },
-  { label: 'Terms', to: '#' },
-  { label: 'Pricing', to: '#' }
-]
+const footerLinks = computed(() => [
+  { label: t('footer.copyright.link.privacy'), to: '#' },
+  { label: t('footer.copyright.link.terms'), to: '#' },
+  { label: t('footer.copyright.link.pricing'), to: '#' }
+])
 </script>
 
 <template>
@@ -13,7 +18,9 @@ const footerLinks = [
     <div class="flex items-center justify-between">
       <div class="flex items-center justify-between">
         <p>
-          {{ $t('footer.copyright.title.titleDev') }} {{ year }},
+          {{ $t('footer.copyright.title.titleLogo') }}
+          {{ $t('footer.copyright.title.titleDev') }}
+          {{ year }},
           {{ $t('footer.copyright.title.titleRights') }}
         </p>
       </div>
