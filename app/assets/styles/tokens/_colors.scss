@@ -1,20 +1,29 @@
-/* Text */
-$color-text-primary: #fff;
-$color-text-secondary: #03081f;
-$color-text-muted: #5a5a5a;
-
 /* Brand */
-$color-brand-primary: #fc8a06;
+$color-brand-primary: #028643;
+$color-brand-hover: #02793c;
 $color-brand-dark: #03081f;
-$color-brand-hover: #26150f;
-$color-accent: #311b14;
+$color-accent: #fc8a06;
+$color-accent-hover: #e07a05;
+$color-online: #00f076;
+
+/* Base */
+$color-white: #ffffff;
+$color-black: #000000;
+
+/* Text */
+$color-text-primary: $color-brand-dark;
+$color-text-secondary: #212121;
+$color-text-muted: #a6a6a6;
+$color-text-on-dark: $color-white;
+$color-text-on-accent: $color-white;
 
 /* Background */
-$color-bg-base: #fefefe;
-$color-bg-soft: #fbfaf8;
-$color-bg-elevated: #ffffff;
+$color-bg-base: #fafafa;
+$color-bg-soft: #f8f8f8;
+$color-bg-elevated: #fdfdfd;
 
 /* UI */
-$color-ui-surface: #f6f4f1;
-$color-ui-surface-strong: #efebe6;
-$color-ui-border: #e7e3de;
+$color-ui-surface: $color-white;
+$color-ui-surface-strong: #f8f8f8;
+$color-ui-border: #d9d9d9;
+$color-ui-border-light: #e2e2e2;

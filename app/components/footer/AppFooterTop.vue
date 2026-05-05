@@ -24,7 +24,7 @@ const socialLinks = [
 <template>
   <div class="w-full bg-[#d9d9d9]/60">
     <div
-      class="container mx-auto grid grid-cols-1 gap-10 pb-[58px] pt-[90px] lg:grid-cols-[minmax(280px,420px)_minmax(320px,1fr)_220px_220px]"
+      class="grid grid-cols-1 gap-10 pb-[58px] pt-[90px] lg:grid-cols-[minmax(280px,420px)_minmax(320px,1fr)_220px_220px]"
     >
       <div class="flex flex-col">
         <img class="h-auto w-[220px] max-w-full lg:w-[268px]" alt="Logo" src="/logo-footer.png" />
@@ -44,7 +44,7 @@ const socialLinks = [
 
       <div class="flex flex-col">
         <h2
-          class="text-lg font-bold leading-[43px] text-[#03081f] [font-family:'Poppins',Helvetica]"
+          class="font-bold text-lg leading-[43px] text-[#03081f] [font-family:'Poppins',Helvetica]"
         >
           Get Exclusive Deals in your Inbox
         </h2>
@@ -58,7 +58,7 @@ const socialLinks = [
           />
           <button
             type="submit"
-            class="h-[59px] rounded-[120px] bg-[#fc8a06] px-10 text-lg font-medium leading-[normal] text-white [font-family:'Poppins',Helvetica] hover:bg-[#fc8a06]/90"
+            class="h-[59px] rounded-[120px] bg-[#fc8a06] px-10 font-medium text-lg leading-[normal] text-white [font-family:'Poppins',Helvetica] hover:bg-[#fc8a06]/90"
           >
             Subscribe
           </button>
@@ -84,7 +84,7 @@ const socialLinks = [
 
       <nav aria-label="Legal Pages" class="flex flex-col">
         <h2
-          class="text-lg font-bold leading-[43px] text-[#03081f] [font-family:'Poppins',Helvetica]"
+          class="font-bold text-lg leading-[43px] text-[#03081f] [font-family:'Poppins',Helvetica]"
         >
           Legal Pages
         </h2>
@@ -103,7 +103,7 @@ const socialLinks = [
 
       <nav aria-label="Important Links" class="flex flex-col">
         <h2
-          class="text-lg font-bold leading-[43px] text-[#03081f] [font-family:'Poppins',Helvetica]"
+          class="font-bold text-lg leading-[43px] text-[#03081f] [font-family:'Poppins',Helvetica]"
         >
           Important Links
         </h2>
