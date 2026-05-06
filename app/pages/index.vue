@@ -11,7 +11,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="w-full">
+  <div class="page-shell w-full space-y-14">
     <HomeHero />
     <HomePopularCategories />
     <HomePopularRestaurants />

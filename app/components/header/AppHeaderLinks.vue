@@ -1,23 +1,11 @@
 <script setup lang="ts">
 const { items: navigationItems } = useHeaderNavigation()
 const { to } = useLocalePathSafe()
-import { computed } from 'vue'
-import { useI18n } from 'vue-i18n'
-
-const { t } = useI18n()
-
-const navigationItems = computed(() => [
-  { label: t('header.headerNav.home'), to: '/', active: true },
-  { label: t('header.headerNav.browseMenu'), to: '#', active: false },
-  { label: t('header.headerNav.specialOffers'), to: '#', active: false },
-  { label: t('header.headerNav.restaurants'), to: '#', active: false },
-  { label: t('header.headerNav.trackOrder'), to: '#', active: false }
-])
 </script>
 
 <template>
   <div
-    class="header__inner container mx-auto flex max-w-6xl items-center justify-between px-4 py-3"
+    class="header__inner container mx-auto flex max-w-6xl items-center justify-between py-3"
   >
     <NuxtLink to="/" class="header__brand h-[53px] w-[215px]">
       <img src="/logo.png" alt="Logo"
