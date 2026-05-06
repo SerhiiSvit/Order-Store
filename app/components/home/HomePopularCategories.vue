@@ -39,7 +39,7 @@ const categories = computed(() => [
 </script>
 
 <template>
-  <section class="container mx-auto mb-[56px]">
+  <section class="w-full">
     <div class="w-full">
       <h2 class="mb-6 text-[32px] font-bold leading-[normal] tracking-[0] text-[#03081f]">
         {{ t('home.popularCategories.title') }}

@@ -8,7 +8,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="restaurants-page restaurants-content space-y-12">
+  <div class="page-shell restaurants-page restaurants-content space-y-12">
     <section
       class="restaurants-page__hero space-y-5 rounded-2xl border border-ui-border bg-surface p-6 shadow-sm md:p-8"
     >
