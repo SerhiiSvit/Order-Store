@@ -34,7 +34,7 @@ const orderCards = computed(() => [
 </script>
 
 <template>
-  <section class="container mb-[53px] w-full rounded-[16px] bg-[#03081f]">
+  <section class="w-full rounded-[16px] bg-[#03081f]">
     <div class="grid min-h-[610px] grid-cols-[1fr_626px]">
       <div class="ml-[57px] flex w-[510px] flex-col justify-center">
         <p class="text-base font-normal leading-[66px] text-white">

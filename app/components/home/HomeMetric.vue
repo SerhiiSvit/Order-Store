@@ -25,9 +25,7 @@ const metrics = computed(() => [
 </script>
 
 <template>
-  <section
-    class="container mx-auto rounded-xl border-0 bg-[#fc8a06] px-[100px] py-[42px] shadow-none"
-  >
+  <section class="w-full rounded-xl border-0 bg-[#fc8a06] px-[100px] py-[42px] shadow-none">
     <div class="grid h-[158px] grid-cols-4">
       <div
         v-for="metric in metrics"

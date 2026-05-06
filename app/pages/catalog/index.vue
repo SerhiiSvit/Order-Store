@@ -9,7 +9,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="catalog-page catalog-content space-y-12">
+  <div class="page-shell catalog-page catalog-content space-y-12">
     <section class="catalog-page__hero space-y-5">
       <UiSectionTitle :title="$t('catalog.title')" :subtitle="$t('catalog.description')" />
     </section>

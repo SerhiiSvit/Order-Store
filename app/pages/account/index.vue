@@ -8,7 +8,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="account-page account-content space-y-12">
+  <div class="page-shell account-page account-content space-y-12">
     <section class="account-page__hero space-y-5">
       <UiSectionTitle :title="$t('account.title')" :subtitle="$t('account.description')" />
     </section>

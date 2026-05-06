@@ -33,7 +33,7 @@ const restaurants = computed(() => [
 </script>
 
 <template>
-  <section class="container mx-auto mb-[56px]">
+  <section class="w-full">
     <div class="w-full">
       <header class="mb-[35px] pl-[21px]">
         <h2 class="text-[32px] font-bold leading-[normal] tracking-[0] text-black">

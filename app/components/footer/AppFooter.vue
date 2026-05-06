@@ -5,7 +5,7 @@ import AppFooterTop from './AppFooterTop.vue'
 
 <template>
   <footer class="w-full">
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto">
       <AppFooterTop />
       <AppFooterBot />
     </div>

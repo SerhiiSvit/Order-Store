@@ -9,7 +9,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="about-page about-content space-y-12">
+  <div class="page-shell about-page about-content space-y-12">
     <section class="about-page__hero space-y-5">
       <UiSectionTitle
         overline="Brewly Store"
