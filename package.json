@@ -28,7 +28,7 @@
     "sync:mykola": "git checkout feature/OSS_mykola && git pull origin feature/OSS_mykola && git rebase feature/OSS_dev && git push --force-with-lease",
     "checkout:dev": "git checkout feature/OSS_dev",
     "checkout:mykola": "git checkout feature/OSS_mykola",
-    "push:dev": "git push origin feature/OSS_mykola",
+    "push:mykola": "git push origin feature/OSS_mykola",
     "release": "standard-version",
     "release:minor": "standard-version --release-as minor",
     "release:major": "standard-version --release-as major"
