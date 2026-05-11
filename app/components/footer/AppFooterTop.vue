@@ -29,7 +29,7 @@ const socialLinks = computed(() => [
 <template>
   <div class="w-full bg-[#d9d9d9]/60">
     <div
-      class="grid grid-cols-1 gap-10 pb-[58px] pt-[90px] lg:grid-cols-[minmax(280px,420px)_minmax(320px,1fr)_220px_220px]"
+      class="container grid grid-cols-1 gap-10 pb-[58px] pt-[90px] lg:grid-cols-[minmax(280px,420px)_minmax(320px,1fr)_220px_220px]"
     >
       <div class="flex flex-col">
         <img class="h-auto w-[220px] max-w-full lg:w-[268px]" alt="Logo" src="/logo-footer.png" />

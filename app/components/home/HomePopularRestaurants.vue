@@ -7,27 +7,27 @@ const { t } = useI18n()
 const restaurants = computed(() => [
   {
     name: t('home.popularRestaurants.restaurants.mcDonald'),
-    image: '/mcDonald.png'
+    image: '/restaurants/mcDonald.png'
   },
   {
     name: t('home.popularRestaurants.restaurants.papaJohns'),
-    image: '/papaJohns.png'
+    image: '/restaurants/papaJohns.png'
   },
   {
     name: t('home.popularRestaurants.restaurants.kfc'),
-    image: '/kfc.png'
+    image: '/restaurants/kfc.png'
   },
   {
     name: t('home.popularRestaurants.restaurants.texasChicken'),
-    image: '/texas_chicken.png'
+    image: '/restaurants/texas_chicken.png'
   },
   {
     name: t('home.popularRestaurants.restaurants.burgerKing'),
-    image: '/burger_king.png'
+    image: '/restaurants/burger_king.png'
   },
   {
     name: t('home.popularRestaurants.restaurants.shaurma1'),
-    image: '/shaurma1.png'
+    image: '/restaurants/shaurma1.png'
   }
 ])
 </script>
@@ -36,7 +36,7 @@ const restaurants = computed(() => [
   <section class="w-full">
     <div class="w-full">
       <header class="mb-[35px] pl-[21px]">
-        <h2 class="text-[32px] font-bold leading-[normal] tracking-[0] text-black">
+        <h2 class="font-bold text-[32px] leading-[normal] tracking-[0] text-black">
           {{ t('home.popularRestaurants.title') }}
         </h2>
       </header>
@@ -56,7 +56,7 @@ const restaurants = computed(() => [
                 :src="restaurant.image"
               />
               <div class="h-[63px] py-[18px] text-center">
-                <span class="text-lg font-bold leading-[normal] tracking-[0] text-white">
+                <span class="font-bold text-lg leading-[normal] tracking-[0] text-white">
                   {{ restaurant.name }}
                 </span>
               </div>
