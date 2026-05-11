@@ -42,7 +42,7 @@ const orderCards = computed(() => [
         </p>
 
         <h1
-          class="font-weight-semibold text-[54px] font-semibold leading-[66px] tracking-[0] text-transparent"
+          class="font-weight-semibold font-semibold text-[54px] leading-[66px] tracking-[0] text-transparent"
         >
           <span class="text-white">{{ t('home.hero.title') }} {{ ' ' }}</span>
           <span class="text-[#fc8a06]">{{ t('home.hero.subtitle') }}</span>
@@ -61,7 +61,7 @@ const orderCards = computed(() => [
             />
 
             <button
-              class="absolute right-[0px] top-[0px] h-[57px] w-[188px] rounded-[120px] bg-[#fc8a06] text-base font-bold text-white hover:bg-[#fc8a06]"
+              class="absolute right-[0px] top-[0px] h-[57px] w-[188px] rounded-[120px] bg-[#fc8a06] font-bold text-base text-white hover:bg-[#fc8a06]"
             >
               {{ t('home.hero.status.button') }}
             </button>
@@ -73,13 +73,13 @@ const orderCards = computed(() => [
         <img
           class="absolute bottom-0 left-[-220px] z-20 h-[541px] w-[465px] object-cover"
           alt="hero image"
-          src="/heroImage.png"
+          src="/hero/heroImage.png"
         />
 
         <img
           class="absolute bottom-0 left-[-400px] z-0 h-[541px] w-[465px] object-cover opacity-30 blur-[1px] brightness-50 grayscale transition-all"
           alt="hero image background"
-          src="/heroImageBack.png"
+          src="/hero/heroImageBack.png"
         />
 
         <div class="h-[565px] w-full rounded-[282.5px_0px_12px_0px] bg-[#fc8a06] p-8">
@@ -91,7 +91,7 @@ const orderCards = computed(() => [
               :style="{ marginRight: index === 1 ? '0px' : index === 2 ? '60px' : '100px' }"
             >
               <div
-                class="absolute right-[10px] top-[-35px] text-[48px] font-semibold leading-normal text-transparent [-webkit-text-stroke:0.2px_#ffffff]"
+                class="absolute right-[10px] top-[-35px] font-semibold text-[48px] leading-normal text-transparent [-webkit-text-stroke:0.2px_#ffffff]"
               >
                 <p>{{ card.step }}</p>
               </div>

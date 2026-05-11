@@ -15,7 +15,7 @@ const footerLinks = computed(() => [
 
 <template>
   <div class="w-full bg-[#03081f] px-6 py-5 text-white">
-    <div class="flex items-center justify-between">
+    <div class="container flex items-center justify-between">
       <div class="flex items-center justify-between">
         <p>
           {{ $t('footer.copyright.title.titleLogo') }}
